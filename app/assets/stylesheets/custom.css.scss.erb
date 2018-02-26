@@ -5,7 +5,7 @@
     src: url('<%= asset_path("proximanova-bold-webfont.ttf") %>') format('truetype');
     src: url('<%= asset_path("proximanova-bold-webfont.eot") %>') format('embedded-opentype'),  
       url('<%= asset_path("proximanova-bold-webfont.woff") %>') format('woff'),  
-	  url('<%= asset_path("proximanova-bold-webfont.ttf") %>') format('truetype'),  
+	  url('<%= asset_path("proximanova-bold-webfont.ttf") %>') format('truetype');
       
 }
 
@@ -14,7 +14,7 @@
     src: url('<%= asset_path("proximanova-regular-webfont.ttf") %>') format('truetype');
     src: url('<%= asset_path("proximanova-regular-webfont.eot") %>') format('embedded-opentype'),  
       url('<%= asset_path("proximanova-regular-webfont.woff") %>') format('woff'),  
-	  url('<%= asset_path("proximanova-regular-webfont.ttf") %>') format('truetype'),  
+	  url('<%= asset_path("proximanova-regular-webfont.ttf") %>') format('truetype');  
       
 }
 
@@ -23,7 +23,7 @@
     src: url('<%= asset_path("proximanova-semibold-webfont.ttf") %>') format('truetype');
     src: url('<%= asset_path("proximanova-semibold-webfont.eot") %>') format('embedded-opentype'),  
       url('<%= asset_path("proximanova-semibold-webfont.woff") %>') format('woff'),  
-	  url('<%= asset_path("proximanova-smibold-webfont.ttf") %>') format('truetype'),  
+	  url('<%= asset_path("proximanova-smibold-webfont.ttf") %>') format('truetype');  
       
 }
 
@@ -32,9 +32,18 @@
     src: url('<%= asset_path("proximanova-regularitalic-webfont.ttf") %>') format('truetype');
     src: url('<%= asset_path("proximanova-regularitalic-webfont.eot") %>') format('embedded-opentype'),  
       url('<%= asset_path("proximanova-regularitalic-webfont.woff") %>') format('woff'),  
-	  url('<%= asset_path("proximanova-regularitalic-webfont.ttf") %>') format('truetype'),  
+	  url('<%= asset_path("proximanova-regularitalic-webfont.ttf") %>') format('truetype'); 
       
 }
+
+@font-face {
+	font-family: 'shoreslines';
+	src: url('<%= asset_path("shorelines-bold-webfont.woff") %>') format('woff');
+	src: url('<%= asset_path("shorelines-bold-webfont.otf") %>') format('opentype');
+}
+
+/** variables **/
+
 
 /** navbar css **/
 #navbar ul { 
@@ -63,3 +72,106 @@
 #navbar ul li a:hover { 
 	color: #000;
 } 
+
+/** typography rules **/
+h1 {
+	font-family: shoreslines, proximaNovaBold, proximaNova, Helvetica, Arial, sans-serif;
+	font-size: 54px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	padding-left: 25px;
+}
+
+h2 {
+	font-family: proximaNova, proximaNovaSemibold, Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	margin-bottom: 52px;
+
+}
+
+p {
+	font-family: proximaNova, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 1.8;
+}
+
+h4 {
+	font-family: proximaNovaSemibold, proximaNova, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+/** spacing **/
+.short-width {
+	max-width: 65%;
+}
+
+.space-below {
+	margin-bottom: 80px;
+}
+
+.float {
+	float: left;
+}
+
+.bio {
+	padding-left: 210px;
+}
+
+.content {
+	margin-bottom: 80px;
+	height: 150px;
+}
+
+@media only screen and (max-width: 990px) {
+	.content{
+		margin-bottom: 140px;
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.content{
+		margin-bottom: 140px;
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.content {
+		margin-bottom: 140px;
+	    height: 200px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.content {
+		margin-bottom: 170px;
+	    height: 400px;
+	}
+}
+
+
+@media only screen and (max-width: 555px) {
+	.content {
+		margin-bottom: 440px;
+	    height: 400px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.content {
+		margin-bottom: 990px;
+	    height: 400px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
