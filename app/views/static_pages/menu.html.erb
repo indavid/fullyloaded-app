@@ -1,17 +1,44 @@
 <% provide(:title, "menu") %>
-<h1>menu</h1>
-	<img src="" alt="picture of bahn mi fries">
-	<h3>bahn mi fries</h3>
-		<p>Naturally dyed pink from lavender buds, this sparkling lemonade is squeezed with fresh lemons offering a delicately citrus floral drink.  Inspired by soda fountains and satisfying the inner child in all of us. Each vanilla bean stem is individually cut, with the addition of the fresh and tangy juice from Californian oranges, to create the organic cream soda we're all craving.</p>
-	<img src="" alt="picture of margherita fries">
-	<h3>margherita fries</h3>
-		<p>Naturally dyed pink from lavender buds, this sparkling lemonade is squeezed with fresh lemons offering a delicately citrus floral drink.  Inspired by soda fountains and satisfying the inner child in all of us. Each vanilla bean stem is individually cut, with the addition of the fresh and tangy juice from Californian oranges, to create the organic cream soda we're all craving.</p>
-	<img src="" alt="picture of doughnut fries">
-	<h3>doughnut fries</h3>
-		<p>Naturally dyed pink from lavender buds, this sparkling lemonade is squeezed with fresh lemons offering a delicately citrus floral drink.  Inspired by soda fountains and satisfying the inner child in all of us. Each vanilla bean stem is individually cut, with the addition of the fresh and tangy juice from Californian oranges, to create the organic cream soda we're all craving.</p>
-	<img src="" alt="picture of cheetos fries">
-	<h3>cheetos fries</h3>
-		<p>Naturally dyed pink from lavender buds, this sparkling lemonade is squeezed with fresh lemons offering a delicately citrus floral drink.  Inspired by soda fountains and satisfying the inner child in all of us. Each vanilla bean stem is individually cut, with the addition of the fresh and tangy juice from Californian oranges, to create the organic cream soda we're all craving.</p>
-	<img src="" alt="picture of in'n'out fries">
-	<h3>in'n'out fries</h3>
-		<p>Naturally dyed pink from lavender buds, this sparkling lemonade is squeezed with fresh lemons offering a delicately citrus floral drink.  Inspired by soda fountains and satisfying the inner child in all of us. Each vanilla bean stem is individually cut, with the addition of the fresh and tangy juice from Californian oranges, to create the organic cream soda we're all craving.</p>
+<div class="medium-width center-block">
+	<h1 class="text-center center-block" style="padding-bottom: 40px;">menu</h1>
+		<div class="food">
+			<%= image_tag("bahnmi.jpg", height: '50%', width: '50%', alt: "bahnmi fries", :class => "float") %>
+				<div class = "description">
+					<h3>bahn mi fries</h3>
+						<p>Naturally dyed pink from lavender buds, this sparkling lemonade is squeezed with fresh lemons offering a delicately citrus floral drink.  Inspired by soda fountains and satisfying the inner child in all of us. Each vanilla bean stem is individually cut, with the addition of the fresh and tangy juice from Californian oranges, to create the organic cream soda we're all craving.</p>
+				</div>
+		</div>
+
+		<div class="food">
+			<%= image_tag("margherita.jpg", height: '50%', width: '50%', alt: "emma", :class => "float") %>
+				<div class="description">
+					<h3>margherita fries</h3>
+						<p>Naturally dyed pink from lavender buds, this sparkling lemonade is squeezed with fresh lemons offering a delicately citrus floral drink.  Inspired by soda fountains and satisfying the inner child in all of us. Each vanilla bean stem is individually cut, with the addition of the fresh and tangy juice from Californian oranges, to create the organic cream soda we're all craving.</p>
+				</div>
+		</div>
+
+
+		<div class="food">
+			<%= image_tag("donut.jpg", height: '50%', width: '50%', alt: "emma", :class => "float") %>
+			<div class="description">	
+				<h3>doughnut fries</h3>
+					<p>Naturally dyed pink from lavender buds, this sparkling lemonade is squeezed with fresh lemons offering a delicately citrus floral drink.  Inspired by soda fountains and satisfying the inner child in all of us. Each vanilla bean stem is individually cut, with the addition of the fresh and tangy juice from Californian oranges, to create the organic cream soda we're all craving.</p>
+			</div>
+		</div>
+
+		<div class="food">
+			<%= image_tag("cheetos.jpg", height: '50%', width: '50%', alt: "emma", :class => "float") %>
+			<div class="description">
+				<h3>cheetos fries</h3>
+					<p>Naturally dyed pink from lavender buds, this sparkling lemonade is squeezed with fresh lemons offering a delicately citrus floral drink.  Inspired by soda fountains and satisfying the inner child in all of us. Each vanilla bean stem is individually cut, with the addition of the fresh and tangy juice from Californian oranges, to create the organic cream soda we're all craving.</p>
+			</div>
+		</div>
+
+		<div class="food">
+		<%= image_tag("animal.jpg", height: '50%', width: '50%', alt: "emma", :class => "float") %>
+			<div class="description">
+				<h3>animal fries</h3>
+					<p>Naturally dyed pink from lavender buds, this sparkling lemonade is squeezed with fresh lemons offering a delicately citrus floral drink.  Inspired by soda fountains and satisfying the inner child in all of us. Each vanilla bean stem is individually cut, with the addition of the fresh and tangy juice from Californian oranges, to create the organic cream soda we're all craving.</p>
+			</div>
+		</div>
+</div>
