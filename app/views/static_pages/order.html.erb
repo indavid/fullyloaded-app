@@ -1,20 +1,26 @@
 <% provide(:title, "order") %>
-<h1>ordering</h1>
-	<h4>choose your fries.</h4>
-	<p>Fully Loaded offers a wide variety of fries… Choose your favorite to get started!</p>
-	<h5 class="button">menu</h5>
-	<img src="" alt="picture of all of the fries">
+<h1 class="text-center center-block" style="padding-bottom: 40px;">ordering</h1>
+		<div class="float info" style="margin-right: 6.3%;">
+			<h5 class ="spacing-1">choose your fries.</h5>
+			<p class ="spacing-2">Fully Loaded offers a wide variety of fries… Choose your favorite to get started!</p>
+			<%= link_to "menu", menu_path, class: "btn btn-primary" %>
+		</div>
+		<%= image_tag("step1.png", height: '28%', width: '28%', alt: "photo of all the fries", class: "rounded-corners") %>
 
-	<h4>text or fill out a form.</h4>
-	<p>Text (908) 349-4094 what you want and we’ll start cooking asap. If you
-	prefer ordering through our website, please fill out the form below.</p>
-	<h5 class="button">order</h5>
-	<img src="" alt="picture of iphone">
+	<div class="float info" style="margin-right: 10.65%;">
+		<h5 class ="spacing-1">text or fill out a form.</h5>
+		<p class ="spacing-2">Text <a href="tel:1-908-349-4094">(908) 349-4094</a> what you want and we’ll start cooking asap. If you
+		prefer ordering through our website, please press the button below.</p>
+		<%= link_to "order", orderform_path, class: "btn btn-primary" %>
+	</div>
+	<%= image_tag("step2.png", height: '20%', width: '20%', alt: "photo of iphone text", class: "rounded-corners") %>
 
-	<h4>pick up your order.</h4>
-	<p>Your order will be ready in 10 to 15 minutes later. Come pick up your
-	delicious fries at the front entrance of Village Lofts</p>
-	<img src="" alt="pick up your fries">
+	<div class="float info" style="margin-right: 3%;">
+		<h5 class ="spacing-1">pick up your order.</h5>
+		<p class ="spacing-2">Your order will be ready in 10 to 15 minutes later. Come pick up your
+		delicious fries at the front entrance of Village Lofts.</p>
+	</div>
+	<%= image_tag("step3.jpg", height: '35%', width: '35%', alt: "photo of margeherita fries", class: "rounded-corners") %>
 
 
 

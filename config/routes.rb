@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get '/order', to: 'static_pages#order'
 
+  get '/orderform', to: 'static_pages#orderform'
+
   get '/faq', to: 'static_pages#faq'
 
   get '/contact', to: 'static_pages#contact'
